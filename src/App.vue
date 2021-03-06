@@ -6,16 +6,13 @@
 
 <script>
 import Video from "./components/Video.vue";
-
 export default {
   name: "App",
   components: {
     Video,
   },
   data() {
-    return {
-      page: 1,
-    };
+    return {};
   },
 };
 </script>
@@ -29,3 +26,4 @@ export default {
   margin-top: 60px;
 }
 </style>
+

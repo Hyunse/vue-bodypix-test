@@ -1,6 +1,6 @@
 {
-  "name": "",
-  "version": "",
+  "name": "bodypix-vue-test",
+  "version": "0.1.0",
   "private": true,
   "scripts": {
     "serve": "vue-cli-service serve",
@@ -8,22 +8,23 @@
     "lint": "vue-cli-service lint"
   },
   "dependencies": {
-    "@tensorflow-models/body-pix": "2.0",
-    "@tensorflow/tfjs": "1.2",
-    "@tensorflow/tfjs-converter": "^2.0.1",
-    "@vue/cli": "^4.4.6",
-    "core-js": "^3.6.5",
-    "vue": "^2.6.11",
-    "vue-head": "^2.2.0"
+    "@tensorflow-models/body-pix": "^2.1.0",
+    "@tensorflow/tfjs": "^3.2.0",
+    "@tensorflow/tfjs-backend-webgl": "^3.2.0",
+    "@tensorflow/tfjs-converter": "^3.2.0",
+    "@tensorflow/tfjs-core": "^3.2.0",
+    "core-js": "^2.6.5",
+    "vue": "^2.6.10",
+    "webrtc-adapter": "^7.7.0"
   },
   "devDependencies": {
-    "@vue/cli-plugin-babel": "~4.4.0",
-    "@vue/cli-plugin-eslint": "~4.4.0",
-    "@vue/cli-service": "~4.4.0",
-    "babel-eslint": "^10.1.0",
-    "eslint": "^6.7.2",
-    "eslint-plugin-vue": "^6.2.2",
-    "vue-template-compiler": "^2.6.11"
+    "@vue/cli-plugin-babel": "^3.12.0",
+    "@vue/cli-plugin-eslint": "^3.12.0",
+    "@vue/cli-service": "^3.12.0",
+    "babel-eslint": "^10.0.1",
+    "eslint": "^5.16.0",
+    "eslint-plugin-vue": "^5.0.0",
+    "vue-template-compiler": "^2.6.10"
   },
   "eslintConfig": {
     "root": true,
@@ -34,16 +35,18 @@
       "plugin:vue/essential",
       "eslint:recommended"
     ],
+    "rules": {},
     "parserOptions": {
       "parser": "babel-eslint"
-    },
-    "rules": {}
+    }
+  },
+  "postcss": {
+    "plugins": {
+      "autoprefixer": {}
+    }
   },
   "browserslist": [
     "> 1%",
-    "last 2 versions",
-    "not dead"
-  ],
-  "_id": "@",
-  "readme": "ERROR: No README data found!"
+    "last 2 versions"
+  ]
 }
